@@ -4,19 +4,19 @@ import com.example.moviefacts.model.Movie;
 import com.example.moviefacts.repository.MovieRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
 public class MovieService {
-    private MovieRepository repository;
+    private MovieRepository movieRepository;
+
 
     public MovieService() {
-        repository = new MovieRepository();
-        repository.loadMovies();
+        movieRepository = new MovieRepository();
+        movieRepository.loadMovies();
     }
     public Movie getFirst() {
-        List<Movie> movies = repository.findAll();
+        List<Movie> movies = movieRepository.findAll();
         return movies.get(0);
 
     }
