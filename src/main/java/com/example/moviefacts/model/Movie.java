@@ -19,6 +19,12 @@ public class Movie {
         this.popularity = popularity;
         this.awards = awards;
     }
+    public String toString() {
+        return year + " " + length + " " + title + " " + genre + " " + popularity + " " + awards;
+    }
+
+
+
     /*
     private enum Genre {
         DRAMA, COMEDY, ACTION, SCIENCE_FICTION, MUSIC, WESTERN, MYSTERY, HORROR, WAR
