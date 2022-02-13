@@ -34,6 +34,14 @@ public class Movie implements Comparable<Movie>{
     public String getTitle() {
         return title;
     }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public int getLength() {
+        return length;
+    }
     /*
     private enum Genre {
         DRAMA, COMEDY, ACTION, SCIENCE_FICTION, MUSIC, WESTERN, MYSTERY, HORROR, WAR

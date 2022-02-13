@@ -42,5 +42,9 @@ public class MovieController {
     public String getNAmountOfCharacters(@RequestParam char character, int amount){
         return movieService.getNAmountOfCharacters(character,amount).toString();
     }
+    @GetMapping("compareGenresByMovieLength")
+    public String compareGenresByMovieLength(@RequestParam String genre1, String genre2) {
+        return movieService.compareGenresByMovieLength(genre1, genre2);
+    }
 }
 
