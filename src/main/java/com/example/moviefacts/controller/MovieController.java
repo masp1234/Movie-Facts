@@ -6,6 +6,7 @@ import com.example.moviefacts.repository.MovieRepository;
 import com.example.moviefacts.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -24,6 +25,22 @@ public class MovieController {
     @GetMapping("/getFirst")
     public String getFirst() {
         return movieService.getFirst().toString();
+    }
+    @GetMapping("/getRandom")
+    public String getRandom(){
+        return movieService.getRandom().toString();
+    }
+    @GetMapping("/getTenSortByPopularity")
+    public String getTenSortByPopularity(){
+        return movieService.getTenSortByPopularity().toString();
+    }
+    @GetMapping("/howManyWonAnAward")
+    public int howManyWonAnAward(){
+        return movieService.howManyWonAnAward();
+    }
+    @GetMapping("getNAmountOfCharacters")
+    public String getNAmountOfCharacters(@RequestParam char character, int amount){
+        return movieService.getNAmountOfCharacters(character,amount).toString();
     }
 }
 
