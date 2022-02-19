@@ -1,0 +1,16 @@
+.random-movie-button {
+    background-color: forestgreen;
+
+    color: ghostwhite;
+    padding: 15px 25px;
+    text-decoration: none;
+
+}
+.random-movie-button:hover {
+    background-color: lightgreen;
+}
+
+body {
+    background-image: url("static/images/nice-image.jpg")
+}
+
