@@ -2,15 +2,27 @@
     background-color: forestgreen;
 
     color: ghostwhite;
-    padding: 15px 25px;
+    padding: 10px 15px;
     text-decoration: none;
 
 }
 .random-movie-button:hover {
     background-color: lightgreen;
 }
+.first-movie-button {
+    background-color: forestgreen;
+
+    color: ghostwhite;
+    padding: 10px 15px;
+    text-decoration: none;
+
+}
+.first-movie-button:hover {
+    background-color: lightgreen;
+}
 
 body {
     background-image: url("static/images/nice-image.jpg")
 }
+
 
